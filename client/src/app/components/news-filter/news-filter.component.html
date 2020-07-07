@@ -1,0 +1,36 @@
+<form [formGroup]="filterForm">
+  <div class="d-flex flex-row align-items-center">
+    <div class="input-group mr-2">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+          country:
+        </span>
+      </div>
+      <select type="text"
+              class="form-control"
+              placeholder="..."
+              formControlName="country">
+        <option value="USA">US</option>
+        <option value="EGYPT">EG</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+          Topic:
+        </span>
+      </div>
+      <input type="text"
+             class="form-control"
+             placeholder="..."
+             formControlName="topic">
+    </div>
+
+    <button class="btn btn-primary search-btn"
+            (click)="submitSearch()">
+      Search
+    </button>
+  </div>
+
+</form>

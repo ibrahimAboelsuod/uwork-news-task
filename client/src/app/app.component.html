@@ -1,0 +1,17 @@
+<div class="container px-5">
+  <app-news-filter class="d-block mt-5"
+                   (onSubmitSearch)="loadNews($event)"></app-news-filter>
+
+  <div *ngIf="isLoading"
+       class="text-center">
+    LOADING...
+  </div>
+
+  <ng-container *ngIf="!isLoading">
+    <div class="row mt-5">
+      <app-news-entry *ngFor="let newsEntry of newsEntries"
+                      [newsEntry]="newsEntry"
+                      class="col-lg-3 col-md-4 col-sm-6 px-1 mb-3"></app-news-entry>
+    </div>
+  </ng-container>
+</div>

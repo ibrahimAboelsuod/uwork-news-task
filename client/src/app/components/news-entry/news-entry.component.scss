@@ -1,0 +1,18 @@
+:host {
+  .card {
+    height: 250px;
+
+    .card-img-top {
+      max-height: 150px;
+    }
+
+    &__title {
+      font-size: 1rem;
+      text-decoration: underline;
+      color: #000000;
+      text-overflow: ellipsis;
+      overflow: auto;
+      height: 100%;
+    }
+  }
+}

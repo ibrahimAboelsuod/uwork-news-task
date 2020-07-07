@@ -1,0 +1,18 @@
+<a [href]="newsEntry.link"
+   target="_blank">
+
+  <div class="card">
+    <img class="card-img-top"
+         src="https://via.placeholder.com/150"
+         [alt]="newsEntry.title">
+    <div class="card-body p-2">
+      <div class="card__title slim-scroll-bar">
+        {{newsEntry.title}}
+      </div>
+      <!-- <p class="card-text"
+       [innerHTML]="newsEntry.description">
+    </p> -->
+    </div>
+  </div>
+
+</a>

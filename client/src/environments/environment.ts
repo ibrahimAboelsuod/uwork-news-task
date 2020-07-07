@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  newsRSSEndPoint:
+    'https://us-central1-uwork-news-task-123.cloudfunctions.net/googleNewsRSS',
 };
 
 /*
